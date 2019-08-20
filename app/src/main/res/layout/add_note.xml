@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeOne"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:color/holo_blue_dark"
+        >
+
+        <TextView
+            android:id="@+id/textactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Activity Below"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/document"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeOne">
+
+        <EditText
+            android:id="@+id/dialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            />
+
+        <EditText
+            android:id="@+id/dialogDesc"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/dialogTitle"
+            android:inputType="textLongMessage"
+            android:hint="Description"
+            android:gravity="start"
+            />
+
+        <Button
+            android:id="@+id/dialogButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialogDesc"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_blue_dark"
+            android:text="add"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
